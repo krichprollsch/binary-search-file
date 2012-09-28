@@ -1,5 +1,9 @@
-FileBinarySearch
+BinarySearchFile
 ===
+
+Binary search into sorted formatted file.
+
+[![Build Status](https://secure.travis-ci.org/krichprollsch/Tac.png)](http://travis-ci.org/krichprollsch/Tac)
 
 Usage
 -----
