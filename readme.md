@@ -1,9 +1,9 @@
-BinarySearchFile
+FileBinarySearch
 ===
 
 Binary search into sorted formatted file.
 
-[![Build Status](https://secure.travis-ci.org/krichprollsch/Tac.png)](http://travis-ci.org/krichprollsch/Tac)
+[![Build Status](https://secure.travis-ci.org/krichprollsch/binary-search-file.png)](http://travis-ci.org/krichprollsch/binary-search-file)
 
 Usage
 -----
@@ -43,7 +43,7 @@ Usage sample :
         //returns > 0 if $tested_line > $searched_value
         //returns 0 if $tested_line == $searched_value
     }
-  
+
     $fbs = new \FileBinarySearch\FileBinarySearch($file, 'mycompare');
 
 Unit Tests
