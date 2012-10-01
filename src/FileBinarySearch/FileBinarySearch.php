@@ -43,7 +43,7 @@ class FileBinarySearch
             $compare = array($this, 'basicomparator');
         }
         if( is_callable($compare) == false ) {
-            throw new \InvalidArgumentException('Formater is not a callable function');
+            throw new \InvalidArgumentException(sprintf('%s is not a callable function', print_r($compare, 1)));
         }
         $this->compare = $compare;
     }
@@ -60,7 +60,7 @@ class FileBinarySearch
         $hi = $this->last;
 
         try {
-            while($hi[self::VALUE] > $lo[self::VALUE] ) {
+            while($hi[self::POS] > $lo[self::POS] ) {
                 $mid = $this->getMid($lo, $hi);
                 $cmp = $this->compare( $mid[self::VALUE], $value );
                 if ($cmp < 0) {
